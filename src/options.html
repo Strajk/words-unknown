@@ -1,10 +1,14 @@
 <!doctype html>
-<meta charset="utf-8">
-<title>Options</title>
-<link rel="stylesheet" href="chrome://global/skin/in-content/common.css">
-<link rel="stylesheet" href="options.css">
+<head>
+  <meta charset="utf-8">
+  <title>Options</title>
+  <link rel="stylesheet" href="chrome://global/skin/in-content/common.css">
+  <link rel="stylesheet" href="options.css">
+  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+</head>
 
-<form id="options-form" class="detail-view-container">
+<body x-data="initialData()" x-init="init()">
+<form id="options-form">
   <h3>Customize</h3>
   <label>
     <p>Background color for <b>unknown</b> words</p>
@@ -24,5 +28,15 @@
   </label>
 </form>
 
-<script src="browser-polyfill.min.js"></script>
+<form>
+  <h3>Vocabulary</h3>
+  <textarea
+    x-ref="dict"
+    x-on:input.debounce.1000ms="saveDict($event)"
+    style="width: 100%; height: 500px"
+  ></textarea>
+</form>
+
+<script src="browser-polyfill.js"></script>
 <script src="options.js"></script>
+</body>

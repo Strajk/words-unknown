@@ -1,3 +1,4 @@
+import 'alpinejs'
 import optionsStorage from './options-storage';
 optionsStorage.syncForm('#options-form');
 
@@ -18,5 +19,19 @@ window.addEventListener('load', () => {
     for (const input of colorInputs) {
       updateColor(input)
     }
-  }, 250) // TODO: Better
+  }, 500) // TODO: Better, maybe with button
 });
+
+window.initialData = function () {
+  return {
+    saveDict: async function (ev) {
+      const dict = ev.target.value.split("\n").filter(x => x.length)
+      await browser.storage.local.set({ dict })
+    },
+
+    async init() {
+      const { dict = [] } = await browser.storage.local.get("dict");
+      this.$refs.dict.value = dict.join("\n");
+    }
+  }
+}

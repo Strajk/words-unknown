@@ -39,6 +39,7 @@
     "name": "Words Unknown"
   },
   "dependencies": {
+    "alpinejs": "~2.7.0",
     "webext-options-sync": "~2.0.0",
     "webextension-polyfill": "~0.6.0"
   }
