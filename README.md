@@ -12,27 +12,39 @@
 
 ### Features (and future futures)
 
+- Customizable highlight colors
+- Dictionary presets
+
+#### Planned (contributions welcome 🙏)
+
 - Optimize permissions
-- Customizable everything #TODO
-- Dictionary presets #TODO
-  - [github.com/words/dale-chall](https://github.com/words/dale-chall)
-  - [github.com/words/spache](https://github.com/words/spache)
-  - [github.com/words/an-array-of-english-words](https://github.com/words/an-array-of-english-words)
-  - [gist.github.com/deekayen/4148741](https://gist.github.com/deekayen/4148741)
-- Dictionary editing #TODO
-- Matching by stem (optional) #TODO
+- Customizable everything
+- Matching by stem (optional)
   - [github.com/words/stemmer](https://github.com/words/stemmer)
 - Optimized data structure for storing dictionary
   - [github.com/zandaqo/structurae](https://github.com/zandaqo/structurae)
   - [johnresig.com/blog/javascript-trie-performance-analysis/](https://johnresig.com/blog/javascript-trie-performance-analysis/)
-- Undo/Redo #TODO
-- History #TODO
-- Root element selection #TODO
-- Dictionary export/import #TODO
-- Dictionary backup #TODO
-- Open in dictionary #TODO
-- Turning on/off #TODO
+- Undo/Redo
+- History
+- Root element selection
+- Dictionary export/import
+- Dictionary backup
+- Open in dictionary
+- Turning on/off
+- Option to ignore name-like words
+- Option to ignore abbreviations
 
 ### About the name
 
 Word play on amazing [Anthony Bourdain's Parts Unknown](https://en.wikipedia.org/wiki/Anthony_Bourdain:_Parts_Unknown)
+
+### Tech stack notes
+
+- Options UI
+  - [github.com/alpinejs/alpine](https://github.com/alpinejs/alpine) – wanted to try it out, it did it's job, but I would use Vue next time.
+
+### Attributions
+
+- Presets / Familiar words
+  - [github.com/words/spache](https://github.com/words/spache)
+  - [github.com/words/dale-chall](https://github.com/words/dale-chall)

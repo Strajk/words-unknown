@@ -4,10 +4,16 @@
   <title>Options</title>
   <link rel="stylesheet" href="chrome://global/skin/in-content/common.css">
   <link rel="stylesheet" href="options.css">
-  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 </head>
 
 <body x-data="initialData()" x-init="init()">
+
+<pre
+  style="box-sizing: border-box; width: 100%; padding: 8px; outline: 1px solid coral"
+  x-if="log"
+  x-text="log"
+></pre>
+
 <form id="options-form">
   <h3>Customize</h3>
   <label>
@@ -30,10 +36,27 @@
 
 <form>
   <h3>Vocabulary</h3>
+
+  <div class="well">
+    <h4 style="margin-bottom: 0 !important; margin-top: 0 !important;">Presets</h4>
+    <ul style="margin-top: 6px; margin-bottom: 0px; margin-left: 0; padding-left: 0; list-style: none;">
+      <template x-for="([key, item], index) in presets" :key="index">
+        <li>
+          <b x-text="item.name"></b> <i x-text="item.description"></i>
+          <a x-bind:href="item.url" target="_blank">More info</a>
+          <div class="actions" style="float: right">
+            <a href="#" x-on:click="usePreset(key, false)">Append</a>
+            <a href="#" x-on:click="usePreset(key, true)">Replace</a>
+          </div>
+        </li>
+      </template>
+    </ul>
+  </div>
+
   <textarea
     x-ref="dict"
     x-on:input.debounce.1000ms="saveDict($event)"
-    style="width: 100%; height: 500px"
+    style="width: 100%; height: 500px; margin-top: 8px;"
   ></textarea>
 </form>
 

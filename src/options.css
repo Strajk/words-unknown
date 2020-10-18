@@ -35,3 +35,9 @@ input[type='text'] {
         display: block;
     }
 }
+
+.well {
+    padding: 8px;
+    background-color: aliceblue;
+    border-radius: 8px;
+}
