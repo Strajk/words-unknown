@@ -2,6 +2,7 @@ import optionsStorage from './options-storage';
 
 const TAG = 'mark'
 const CLASSNAME = "__words-unknown"
+const CLASSNAME_CAPITALIZED = "capitalized"
 const CLASSNAME_ADDED = "added"
 const SELECTOR = `${TAG}.${CLASSNAME}`;
 
@@ -12,11 +13,16 @@ let currKey
 
   const style = `
     ${TAG}.${CLASSNAME} {
-      background: ${options.colorUnknown};
+      background-color: ${options.colorUnknown};
       cursor: pointer;
     }
+    ${TAG}.${CLASSNAME}.${CLASSNAME_CAPITALIZED} {
+      background-color: transparent;
+      outline: 1px dotted ${options.colorUnknown};
+    }
     ${TAG}.${CLASSNAME}.${CLASSNAME_ADDED} {
-      background: ${options.colorAdded};
+      background-color: ${options.colorAdded} !important;
+      outline: none !important;
       cursor: inherit;
     }
   `;
@@ -45,18 +51,17 @@ let currKey
     const words = (text.match(/\b(\w+)\b/g) || []).filter(x => x.length > 2) // TODO: parametrize
 
     let rest = node
-    words.forEach(word => {
-      if (!dict.includes(word.toLowerCase())) {
-        const l = rest.textContent.indexOf(word)
-        const match = rest.splitText(l)
-        rest = match.splitText(word.length)
+    words.forEach((word, index) => {
+      if (dict.includes(word.toLowerCase())) return;
 
-        const el = document.createElement(TAG);
-        el.setAttribute('class', CLASSNAME);
-        el.textContent = match.textContent;
-
-        node.parentNode.replaceChild(el, match);
-      }
+      const l = rest.textContent.indexOf(word)
+      const match = rest.splitText(l)
+      rest = match.splitText(word.length)
+      const el = document.createElement(TAG);
+      el.classList.add(CLASSNAME);
+      if (word.charAt(0) === word.charAt(0).toUpperCase()) el.classList.add(CLASSNAME_CAPITALIZED)
+      el.textContent = match.textContent;
+      node.parentNode.replaceChild(el, match);
     })
   }
 })()

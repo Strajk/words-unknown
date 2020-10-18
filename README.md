@@ -13,11 +13,13 @@
 ### Features (and future futures)
 
 - Customizable highlight colors
+- Capitalized words are subtly outlined instead of highlighted with background color
 - Dictionary presets
 
 #### Planned (contributions welcome 🙏)
 
 - Optimize permissions
+- Click on added to remove
 - Customizable everything
 - Matching by stem (optional)
   - [github.com/words/stemmer](https://github.com/words/stemmer)
