@@ -1,0 +1,45 @@
+{
+  "name": "words-unknown",
+  "version": "0.0.1",
+  "description": "Learn English while browsing the web by highlighting words that you don't know yet",
+  "scripts": {
+    "develop": "webpack --mode=development --watch",
+    "firefox": "web-ext run --source-dir=build",
+    "build": "webpack --mode=production",
+    "build-readme": "ejs-cli README.ejs --options package.json > README.md",
+    "prep-for-publish": "rm -rf build build.zip && webpack --mode=production && cd build && zip -r ../build.zip ./ && echo 'Jobe done 🙏'",
+    "icons:generate": "for x in 16 48 128; do convert src/icons/original.png -resize ${x}x${x} src/icons/icon-${x}.png ; done",
+    "test": "jest",
+    "cypress:open": "cypress open",
+    "lint": "eslint .",
+    "lint-fix": "eslint --fix ."
+  },
+  "keywords": [],
+  "author": "Pavel 'Strajk' Dolecek <strajk@me.com> (https://www.strajk.me/)",
+  "license": "ISC",
+  "devDependencies": {
+    "copy-webpack-plugin": "~5.1.1",
+    "cypress": "~4.10.0",
+    "cypress-browser-extension-plugin": "Strajk/cypress-browser-extension-plugin#15f14eaad4c0602339ddd67aafd9ec9d9145936b",
+    "ejs": "~3.1.2",
+    "ejs-cli": "~2.2.0",
+    "eslint": "~6.8.0",
+    "eslint-config-airbnb-base": "~14.1.0",
+    "eslint-config-strajk": "0.0.6",
+    "eslint-plugin-cypress": "~2.10.3",
+    "eslint-plugin-import": "~2.20.2",
+    "jest": "~25.4.0",
+    "web-ext": "~4.2.0",
+    "web-ext-submit": "~4.2.0",
+    "webpack": "~4.43.0",
+    "webpack-cli": "~3.3.11",
+    "webpack-extension-reloader": "~1.1.4"
+  },
+  "meta": {
+    "name": "Words Unknown"
+  },
+  "dependencies": {
+    "webext-options-sync": "~2.0.0",
+    "webextension-polyfill": "~0.6.0"
+  }
+}

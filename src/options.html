@@ -1,0 +1,28 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Options</title>
+<link rel="stylesheet" href="chrome://global/skin/in-content/common.css">
+<link rel="stylesheet" href="options.css">
+
+<form id="options-form" class="detail-view-container">
+  <h3>Customize</h3>
+  <label>
+    <p>Background color for <b>unknown</b> words</p>
+    <div class="color-input">
+      <input type="text" size="25" name="colorUnknown"/>
+      <span class="color-output"></span>
+      <small>Any valid CSS color</small>
+    </div>
+  </label>
+  <label>
+    <p>Background color for <b>just added</b> words</p>
+    <div class="color-input">
+      <input type="text" size="25" name="colorAdded"/>
+      <span class="color-output"></span>
+      <small>Any valid CSS color</small>
+    </div>
+  </label>
+</form>
+
+<script src="browser-polyfill.min.js"></script>
+<script src="options.js"></script>
