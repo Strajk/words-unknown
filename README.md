@@ -18,6 +18,11 @@
 
 #### Planned (contributions welcome 🙏)
 
+- Add "n" most frequend words
+  - http://norvig.com/mayzner.html
+  - https://pastebin.com/anKcMdvk
+  - https://en.wiktionary.org/wiki/Wiktionary:Frequency_lists#Project_Gutenberg
+  - https://en.wiktionary.org/wiki/Wiktionary:Frequency_lists
 - Optimize permissions
 - Click on added to remove
 - Customizable everything

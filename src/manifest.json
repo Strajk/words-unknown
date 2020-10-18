@@ -14,9 +14,7 @@
   },
   "permissions": [
     "storage",
-    "tabs",
-    "activeTab",
-    "*://*/*"
+    "activeTab"
   ],
   "web_accessible_resources": ["inject.js"],
   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
