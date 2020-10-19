@@ -2,6 +2,8 @@
 
 ⚠️ **Work in progress**, current version is a pure MVP
 
+![screenshot](assets/screen.png)
+
 ## How to use
 
 - Click on extension icon to activate it

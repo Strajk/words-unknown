@@ -14,20 +14,20 @@ License URL ... https://raw.githubusercontent.com/matejlatin/Gutenberg/master/li
 /* Font themes
    ========================================================================== */
 @import url("https://fonts.googleapis.com/css?family=Merriweather:400,700,400italic");
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 50em) {
   .floatLeft {
     float: left;
   }
 }
 
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 50em) {
   .floatCenter {
     margin-left: auto;
     margin-right: auto;
   }
 }
 
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 50em) {
   .floatRight {
     float: right;
   }
@@ -42,19 +42,19 @@ License URL ... https://raw.githubusercontent.com/matejlatin/Gutenberg/master/li
   background-size: 100% 26px;
   background-size: 100% 1.625rem;
 }
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 50em) {
   .grid, .grid-double {
-    background-size: 100% 31px;
-    background-size: 100% 1.722222222222222rem;
+    background-size: 100% 27px;
+    background-size: 100% 1.6875rem;
   }
 }
 
 .grid-double {
   background-image: linear-gradient(to bottom, rgba(0, 170, 255, 0.3) 1px, transparent 1px, transparent 13px, rgba(0, 170, 255, 0.2) 13px, transparent 14px, transparent 26px);
 }
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 50em) {
   .grid-double {
-    background-image: linear-gradient(to bottom, rgba(0, 170, 255, 0.3) 1px, transparent 1px, transparent 15.5px, rgba(0, 170, 255, 0.2) 15.5px, transparent 16.5px, transparent 31px);
+    background-image: linear-gradient(to bottom, rgba(0, 170, 255, 0.3) 1px, transparent 1px, transparent 13.5px, rgba(0, 170, 255, 0.2) 13.5px, transparent 14.5px, transparent 27px);
   }
 }
 
@@ -68,10 +68,10 @@ License URL ... https://raw.githubusercontent.com/matejlatin/Gutenberg/master/li
   padding: 0 10px 0 20px;
   height: 32px;
 }
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 50em) {
   .toggleWrapper {
-    right: 31px;
-    top: 31px;
+    right: 27px;
+    top: 27px;
   }
 }
 
@@ -89,10 +89,10 @@ License URL ... https://raw.githubusercontent.com/matejlatin/Gutenberg/master/li
   font-weight: 700;
   color: #fff;
 }
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 50em) {
   .btnToggleGrid {
-    top: 31px;
-    right: 31px;
+    top: 27px;
+    right: 27px;
   }
 }
 .btnToggleGrid:hover {
@@ -116,9 +116,9 @@ aside {
 
 /* Defaults
    ========================================================================== */
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 50em) {
   body,
-  html {
+html {
     margin: 0;
     width: 100%;
     max-width: none;
@@ -134,10 +134,10 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 50em) {
   html {
-    font-size: 18px;
-    font-size: 1.125rem;
+    font-size: 16px;
+    font-size: 1rem;
   }
 }
 
@@ -147,14 +147,14 @@ html {
   margin: 0px 0px 26px;
   margin: 0rem 0rem 1.625rem;
 }
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 50em) {
   * {
-    line-height: 31px;
-    line-height: 1.722222222222222rem;
-    margin-bottom: 31px;
-    margin-bottom: 1.722222222222222rem;
-    max-width: 630px;
-    max-width: 35rem;
+    line-height: 27px;
+    line-height: 1.6875rem;
+    margin-bottom: 27px;
+    margin-bottom: 1.6875rem;
+    max-width: 720px;
+    max-width: 45rem;
     margin-left: auto;
     margin-right: auto;
   }
@@ -195,7 +195,7 @@ section {
 a {
   background: transparent;
   color: #222;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 a:active, a:hover {
   outline: 0;
@@ -218,10 +218,10 @@ article {
   margin: 0 auto;
   width: 80%;
 }
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 50em) {
   article {
-    max-width: 945px;
-    max-width: 52.5rem;
+    max-width: 1080px;
+    max-width: 67.5rem;
   }
 }
 
@@ -255,10 +255,10 @@ code {
   padding: 1.625rem;
   display: block;
 }
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 50em) {
   code {
-    padding: 31px;
-    padding: 1.722222222222222rem;
+    padding: 27px;
+    padding: 1.6875rem;
   }
 }
 
@@ -275,15 +275,15 @@ figcaption {
   line-height: 1.625rem;
   color: #222;
   display: block;
-  font-size: .8125rem;
+  font-size: 0.8125rem;
   font-style: italic;
   margin-bottom: 0;
   text-align: center;
 }
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 50em) {
   figcaption {
-    line-height: 31px;
-    line-height: 1.722222222222222rem;
+    line-height: 27px;
+    line-height: 1.6875rem;
     margin-bottom: 0;
   }
 }
@@ -292,30 +292,30 @@ figure {
   display: block;
 }
 
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 50em) {
   figure.floatLeft,
-  figure.floatRight {
-    max-width: 315px;
-    max-width: 17.5rem;
-    padding: 0px 31px;
-    padding: 0rem 1.722222222222222rem;
+figure.floatRight {
+    max-width: 360px;
+    max-width: 22.5rem;
+    padding: 0px 27px;
+    padding: 0rem 1.6875rem;
   }
 }
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 50em) {
   figure.floatLeft blockquote,
-  figure.floatRight blockquote {
+figure.floatRight blockquote {
     padding: 0px;
     padding: 0rem;
     text-align: left;
   }
 }
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 50em) {
   figure.floatLeft blockquote p,
-  figure.floatRight blockquote p {
+figure.floatRight blockquote p {
     font-size: 19.2px;
     font-size: 1.2rem;
-    line-height: 31px;
-    line-height: 1.722222222222222rem;
+    line-height: 27px;
+    line-height: 1.6875rem;
   }
 }
 
@@ -387,81 +387,81 @@ h6 {
   margin-bottom: 0.8125rem;
 }
 
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 50em) {
   h1 {
     font-size: 40px;
     font-size: 2.5rem;
-    line-height: 62px;
-    line-height: 3.444444444444445rem;
-    margin-top: 124px;
-    margin-top: 6.888888888888889rem;
-    margin-bottom: 31px;
-    margin-bottom: 1.722222222222222rem;
+    line-height: 54px;
+    line-height: 3.375rem;
+    margin-top: 108px;
+    margin-top: 6.75rem;
+    margin-bottom: 27px;
+    margin-bottom: 1.6875rem;
   }
 
   h2 {
     font-size: 27px;
     font-size: 1.6875rem;
-    line-height: 46.5px;
-    line-height: 2.583333333333334rem;
-    margin-top: 77.5px;
-    margin-top: 4.305555555555556rem;
-    margin-bottom: 15.5px;
-    margin-bottom: 0.861111111111111rem;
+    line-height: 40.5px;
+    line-height: 2.53125rem;
+    margin-top: 67.5px;
+    margin-top: 4.21875rem;
+    margin-bottom: 13.5px;
+    margin-bottom: 0.84375rem;
   }
 
   h3 {
     font-size: 22px;
     font-size: 1.375rem;
-    line-height: 31px;
-    line-height: 1.722222222222222rem;
-    margin-top: 62px;
-    margin-top: 3.444444444444445rem;
-    margin-bottom: 15.5px;
-    margin-bottom: 0.861111111111111rem;
+    line-height: 27px;
+    line-height: 1.6875rem;
+    margin-top: 54px;
+    margin-top: 3.375rem;
+    margin-bottom: 13.5px;
+    margin-bottom: 0.84375rem;
   }
 
   h4 {
     font-size: 19.2px;
     font-size: 1.2rem;
-    line-height: 31px;
-    line-height: 1.722222222222222rem;
-    margin-top: 46.5px;
-    margin-top: 2.583333333333334rem;
-    margin-bottom: 15.5px;
-    margin-bottom: 0.861111111111111rem;
+    line-height: 27px;
+    line-height: 1.6875rem;
+    margin-top: 40.5px;
+    margin-top: 2.53125rem;
+    margin-bottom: 13.5px;
+    margin-bottom: 0.84375rem;
   }
 
   h5 {
     font-size: 16px;
     font-size: 1rem;
-    line-height: 31px;
-    line-height: 1.722222222222222rem;
-    margin-top: 77.5px;
-    margin-top: 4.305555555555556rem;
-    margin-bottom: 15.5px;
-    margin-bottom: 0.861111111111111rem;
+    line-height: 27px;
+    line-height: 1.6875rem;
+    margin-top: 67.5px;
+    margin-top: 4.21875rem;
+    margin-bottom: 13.5px;
+    margin-bottom: 0.84375rem;
   }
 
   h6 {
     font-size: 16px;
     font-size: 1rem;
-    line-height: 31px;
-    line-height: 1.722222222222222rem;
-    margin-top: 77.5px;
-    margin-top: 4.305555555555556rem;
-    margin-bottom: 15.5px;
-    margin-bottom: 0.861111111111111rem;
+    line-height: 27px;
+    line-height: 1.6875rem;
+    margin-top: 67.5px;
+    margin-top: 4.21875rem;
+    margin-bottom: 13.5px;
+    margin-bottom: 0.84375rem;
   }
 }
 h1 + h2 {
   margin-top: 26px;
   margin-top: 1.625rem;
 }
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 50em) {
   h1 + h2 {
-    margin-top: 31px;
-    margin-top: 1.722222222222222rem;
+    margin-top: 27px;
+    margin-top: 1.6875rem;
   }
 }
 
@@ -471,12 +471,12 @@ h4 + h5 {
   margin-top: 13px;
   margin-top: 0.8125rem;
 }
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 50em) {
   h2 + h3,
-  h3 + h4,
-  h4 + h5 {
-    margin-top: 15.5px;
-    margin-top: 0.861111111111111rem;
+h3 + h4,
+h4 + h5 {
+    margin-top: 13.5px;
+    margin-top: 0.84375rem;
   }
 }
 
@@ -484,10 +484,10 @@ h5 + h6 {
   margin-top: -13px;
   margin-top: -0.8125rem;
 }
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 50em) {
   h5 + h6 {
-    margin-top: -15.5px;
-    margin-top: -0.861111111111111rem;
+    margin-top: -13.5px;
+    margin-top: -0.84375rem;
   }
 }
 
@@ -518,21 +518,21 @@ hr {
   background-image: linear-gradient(to bottom, transparent 1px, transparent 11px, #222 11px, #222 15px, transparent 15px, transparent 26px);
   width: 100px;
 }
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 50em) {
   hr {
-    margin-top: 62px;
-    margin-top: 3.444444444444445rem;
-    margin-bottom: 62px;
-    margin-bottom: 3.444444444444445rem;
-    height: 31px;
-    height: 1.722222222222222rem;
+    margin-top: 54px;
+    margin-top: 3.375rem;
+    margin-bottom: 54px;
+    margin-bottom: 3.375rem;
+    height: 27px;
+    height: 1.6875rem;
   }
 }
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 50em) {
   hr {
-    background-size: 100% 31px;
-    background-size: 100% 1.722222222222222rem;
-    background-image: linear-gradient(to bottom, transparent 1px, transparent 13.5px, #222 13.5px, #222 17.5px, transparent 17.5px, transparent 31px);
+    background-size: 100% 27px;
+    background-size: 100% 1.6875rem;
+    background-image: linear-gradient(to bottom, transparent 1px, transparent 11.5px, #222 11.5px, #222 15.5px, transparent 15.5px, transparent 27px);
   }
 }
 
@@ -565,7 +565,7 @@ blockquote {
   font-style: italic;
   padding-left: 1.4375rem;
 }
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 50em) {
   blockquote {
     padding-left: 2rem;
   }
@@ -580,10 +580,10 @@ figure blockquote {
   padding: 26px 0px;
   padding: 1.625rem 0rem;
 }
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 50em) {
   figure blockquote {
-    padding: 62px 0px 31px;
-    padding: 3.444444444444445rem 0rem 1.722222222222222rem;
+    padding: 54px 0px 27px;
+    padding: 3.375rem 0rem 1.6875rem;
     text-align: center;
   }
 }
@@ -593,12 +593,12 @@ figure blockquote p {
   line-height: 39px;
   line-height: 2.4375rem;
 }
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 50em) {
   figure blockquote p {
     font-size: 27px;
     font-size: 1.6875rem;
-    line-height: 46.5px;
-    line-height: 2.583333333333334rem;
+    line-height: 40.5px;
+    line-height: 2.53125rem;
   }
 }
 
@@ -641,7 +641,6 @@ dfn {
 em,
 i {
   line-height: 0;
-  position: relative;
   vertical-align: baseline;
 }
 
@@ -655,10 +654,10 @@ small {
   line-height: 0.8125rem;
   font-size: 70%;
 }
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 50em) {
   small {
-    line-height: 15.5px;
-    line-height: 0.861111111111111rem;
+    line-height: 13.5px;
+    line-height: 0.84375rem;
   }
 }
 
@@ -698,7 +697,7 @@ sub {
 }
 
 .uppercase {
-  letter-spacing: .1em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
 }
 

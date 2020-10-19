@@ -13,10 +13,10 @@ $paragraph-indent: false; // [ true / false ]
 
 // Base sizes
 $base-font-size: 100 !default; // In %. Also used for mobile. Number only, no units.
-$base-font-size-desktop: 112.5 !default; // In %. Used to calculate the desktop font size. Number only, no units.
+$base-font-size-desktop: 100 !default; // In %. Used to calculate the desktop font size. Number only, no units.
 $line-height: 1.625 !default;
 $line-height-desktop: 1.7 !default;
-$max-width: 35 !default; // Number only, no units. Gets converted to REMs and pixels.
+$max-width: 45 !default; // Number only, no units. Gets converted to REMs and pixels.
 
 // Modular Scale
 $modular-scale: (
