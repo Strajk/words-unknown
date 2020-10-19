@@ -16,6 +16,7 @@
 - Customizable highlight colors
 - Capitalized words are subtly outlined instead of highlighted with background color
 - Dictionary presets
+- Export to file for backup
 
 #### Planned (contributions welcome 🙏)
 
@@ -37,8 +38,6 @@
 - Dictionary backup
 - Open in dictionary
 - Turning on/off
-- Option to ignore name-like words
-- Option to ignore abbreviations
 
 ### About the name
 

@@ -35,7 +35,7 @@
 </form>
 
 <form>
-  <h3>Vocabulary</h3>
+  <h3>Vocabulary <small x-on:click="download()"><a href="#">export</a></small></h3>
 
   <div class="well">
     <h4 style="margin-bottom: 0 !important; margin-top: 0 !important;">Presets</h4>
@@ -43,7 +43,7 @@
       <template x-for="([key, item], index) in presets" :key="index">
         <li>
           <b x-text="item.name"></b> <i x-text="item.description"></i>
-          <a x-bind:href="item.url" target="_blank">More info</a>
+          <a x-bind:href="item.url" target="_blank" style="margin-left: 5px; opacity: .7;">Wikipedia</a>
           <div class="actions" style="float: right">
             <a href="#" x-on:click="usePreset(key, false)">Append</a>
             <a href="#" x-on:click="usePreset(key, true)">Replace</a>
