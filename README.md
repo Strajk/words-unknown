@@ -23,10 +23,10 @@
 #### Planned (contributions welcome 🙏)
 
 - Add "n" most frequend words
-  - http://norvig.com/mayzner.html
-  - https://pastebin.com/anKcMdvk
-  - https://en.wiktionary.org/wiki/Wiktionary:Frequency_lists#Project_Gutenberg
-  - https://en.wiktionary.org/wiki/Wiktionary:Frequency_lists
+  - [norvig.com/mayzner](http://norvig.com/mayzner.html)
+  - [pastebin.com/anKcMdvk](https://pastebin.com/anKcMdvk)
+  - [en.wiktionary.org/wiki/Wiktionary:Frequency_lists#Project_Gutenberg](https://en.wiktionary.org/wiki/Wiktionary:Frequency_lists#Project_Gutenberg)
+  - [en.wiktionary.org/wiki/Wiktionary:Frequency_lists](https://en.wiktionary.org/wiki/Wiktionary:Frequency_lists)
 - Customizable everything
 - Matching by stem (optional)
   - [github.com/words/stemmer](https://github.com/words/stemmer)
@@ -53,3 +53,5 @@ Word play on amazing [Anthony Bourdain's Parts Unknown](https://en.wikipedia.org
 - Presets / Familiar words
   - [github.com/words/spache](https://github.com/words/spache)
   - [github.com/words/dale-chall](https://github.com/words/dale-chall)
+- Example
+  - [github.com/matejlatin/Gutenberg](https://github.com/matejlatin/Gutenberg)
