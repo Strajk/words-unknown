@@ -1,8 +1,10 @@
 > Learn English while browsing the web by highlighting words that you don't know yet.
 
-⚠️ **Work in progress**, current version is a pure MVP
+⚠️ **Work in progress** – current version is a pure MVP, but useful already!
 
-![screenshot](assets/screen.png)
+![screenshot](assets/readme-1.png)
+
+![screenshot](assets/readme-2.png)
 
 ## How to use
 
