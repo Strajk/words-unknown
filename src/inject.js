@@ -81,7 +81,11 @@ async function handlerClick(ev) {
       break
     default:
       ev.preventDefault()
-      await addToDict(text)
+      if (el.classList.contains(CLASSNAME_ADDED)) {
+        await removeFromDict(text)
+      } else {
+        await addToDict(text)
+      }
   }
 }
 
@@ -95,8 +99,29 @@ async function addToDict(word) {
     .forEach(el => el.classList.add(CLASSNAME_ADDED))
 }
 
+async function removeFromDict(word) {
+  const { dict = [] } = await browser.storage.local.get("dict");
+  await browser.storage.local.set({ dict: removeItemFromArray(dict, word) })
+
+  Array.from(document.querySelectorAll(`${SELECTOR}.${CLASSNAME_ADDED}`))
+    .filter(el => el.innerText.toLowerCase() === word.toLowerCase())
+    .forEach(el => el.classList.remove(CLASSNAME_ADDED))
+}
+
 function injectCss (content) {
   const el = document.createElement("style")
   el.innerHTML = content
   document.head.appendChild(el)
+}
+
+function removeItemFromArray(arr, val) {
+  let i = 0;
+  while (i < arr.length) {
+    if (arr[i] === val) {
+      arr.splice(i, 1);
+    } else {
+      ++i;
+    }
+  }
+  return arr;
 }

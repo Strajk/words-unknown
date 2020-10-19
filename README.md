@@ -9,6 +9,7 @@
 - Click on highlighted words to add them to the dictionary
   - If the highlight is part of the link, hold <kbd>cmd</kbd> key while clicking to open the link instead of adding the word.
   - Hold the <kbd>d</kbd> key while clicking to open the dictionary instead of adding the word.
+  - Click again on an added word to remove it from dictionary
 
 ### Features (and future futures)
 
@@ -23,8 +24,6 @@
   - https://pastebin.com/anKcMdvk
   - https://en.wiktionary.org/wiki/Wiktionary:Frequency_lists#Project_Gutenberg
   - https://en.wiktionary.org/wiki/Wiktionary:Frequency_lists
-- Optimize permissions
-- Click on added to remove
 - Customizable everything
 - Matching by stem (optional)
   - [github.com/words/stemmer](https://github.com/words/stemmer)
