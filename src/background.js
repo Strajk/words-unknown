@@ -7,6 +7,15 @@ if (process.env.NODE_ENV === "development") {
   })
 }
 
+chrome.runtime.onInstalled.addListener(details => {
+  if (details.reason == "install") {
+    chrome.runtime.openOptionsPage()
+  } else if (details.reason == "update") {
+    const thisVersion = chrome.runtime.getManifest().version;
+    console.log("Updated from " + details.previousVersion + " to " + thisVersion + "!");
+  }
+});
+
 browser.browserAction.onClicked.addListener(tab => {
   browser.tabs.executeScript({file: "browser-polyfill.js"});
   browser.tabs.executeScript(tab.id, {

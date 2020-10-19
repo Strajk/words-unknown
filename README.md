@@ -34,8 +34,6 @@
 - Undo/Redo
 - History
 - Root element selection
-- Dictionary export/import
-- Dictionary backup
 - Open in dictionary
 - Turning on/off
 
