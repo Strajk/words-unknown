@@ -1,12 +1,13 @@
 const path = require("path")
 const exec = require("child_process").exec
+const json5 = require("json5")
 const CopyWebpackPlugin = require("copy-webpack-plugin")
 // const stylus = require("stylus")
 
 const pkg = require("./package.json")
 
 function transformManifest (buffer, mode) {
-  const manifest = JSON.parse(buffer.toString())
+  const manifest = json5.parse(buffer.toString())
 
   manifest.name = pkg.meta.name
   manifest.version = pkg.version
@@ -39,10 +40,10 @@ module.exports = (env, argv) => ({
         ignore: [
           "*.js", // Handled by Webpack core
           "*.styl", // Handled separately
-          "manifest.json", // Handled separately
+          "manifest.json5", // Handled separately
         ],
       },
-      { context: "src", from: "manifest.json", transform: buffer => transformManifest(buffer, argv.mode) },
+      { context: "src", from: "manifest.json5", to: "manifest.json", transform: buffer => transformManifest(buffer, argv.mode) },
       { from: "node_modules/webextension-polyfill/dist/browser-polyfill.js" },
       // { context: "src", from: "*.styl", to: "[name].css", transform: buffer => stylus.render(buffer.toString()) },
     ]),

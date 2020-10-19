@@ -4,7 +4,6 @@
   "name": "__GENERATED__",
   "version": "__GENERATED__",
   "description": "__GENERATED__",
-
   "homepage_url": "__GENERATED__",
 
   "icons": {
@@ -16,17 +15,23 @@
     "storage",
     "activeTab"
   ],
-  "web_accessible_resources": ["inject.js"],
+
+  /* Required due to "eval" in AlpineJS https://github.com/alpinejs/alpine/blob/b4f26a67d1b5298ae1d1058beafb14d79fe58216/src/utils.js#L64
+     Uncaught EvalError: Refused to evaluate a string as JavaScript because 'unsafe-eval'
+     is not an allowed source of script in the following Content Security Policy directive: "script-src 'self' blob: filesystem:"
+  */
   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+
   "background": {
     "scripts": ["browser-polyfill.js", "background.js"],
     "persistent": false
   },
-  "options_page": "options.html",
+
   "options_ui": {
     "chrome_style": true,
     "page": "options.html"
   },
+
   "browser_action": {
     "default_icon": "icons/icon-48.png",
     "default_title": "__GENERATED__"
