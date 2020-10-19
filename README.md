@@ -2,6 +2,8 @@
 
 ⚠️ **Work in progress** – current version is a pure MVP, but useful already!
 
+Get here ➡️ https://chrome.google.com/webstore/detail/words-unknown/mmjhgjcmfmjmahgjhkjfondhnmlfeacj
+
 ![screenshot](assets/readme-1.png)
 
 ![screenshot](assets/readme-2.png)
