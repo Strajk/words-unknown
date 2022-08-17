@@ -26,7 +26,7 @@ Get here ➡️ https://chrome.google.com/webstore/detail/words-unknown/mmjhgjcm
 
 #### Planned (contributions welcome 🙏)
 
-- Add "n" most frequend words
+- Add "n" most frequent words
   - [norvig.com/mayzner](http://norvig.com/mayzner.html)
   - [pastebin.com/anKcMdvk](https://pastebin.com/anKcMdvk)
   - [en.wiktionary.org/wiki/Wiktionary:Frequency_lists#Project_Gutenberg](https://en.wiktionary.org/wiki/Wiktionary:Frequency_lists#Project_Gutenberg)
